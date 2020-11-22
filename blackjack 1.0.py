@@ -1,8 +1,9 @@
+#2.0 adds graphics
 import random
-
-#Neeed cards with values, could have used a dict or list but wanted to try creating a deck in python
+import pygame
+#Need cards with values, could have used a dict or list but wanted to try creating a deck in python
 class Card:
-    def __init__(self, suit, num):
+    def __init__(self, num, suit):
         self.suit = suit
         self.num = num
         if num > 10:
@@ -20,13 +21,13 @@ class Card:
             return 'King' + ' of ' + self.suit
         return str(self.num) + ' of ' + self.suit
     
-deck = []
+#implemented list comprehension
 suits = ["Hearts","Diamonds","Spades","Clubs"]
+deck = [Card(i,j) for i in range(1, 14) for j in suits]
 
-for i in range(1,14):
-    for j in suits:
-        new_card = Card(j, i)
-        deck.append(new_card)
+for item in deck:
+    print(item)
+
 
 #game loop
 print("\n\t!!! WELCOME to BLACKJACK !!!\t")
@@ -115,8 +116,3 @@ while input("\ncontinue? (y/n) ") != "n":
         else:
             print()
         p += 1
-    
-
-    
-
-    

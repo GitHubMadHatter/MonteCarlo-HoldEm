@@ -1,0 +1,17 @@
+UI
+- Finish intitalsing section (choose fonts, resolution + players + difficulty selection)
+- Setup surfaces
+- function to centre buttons
+
+Game 
+- Sense check all the code
+- Work out required values in game state
+
+Test code
+- Create test code to test all methods and classes
+
+AI
+- Work out how to see game state, need to send it to the ai code?
+
+
+CREATE SYSTEM FLOWCHART

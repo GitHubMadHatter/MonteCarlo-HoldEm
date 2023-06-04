@@ -1,5 +1,6 @@
 # PokerAI
 
+**PROJECT KILLED - DROPPED UNIT**
 
 Repository for all documents related to Yash Agarwal's 2021 Software Design and Develoment HSC Major Work
 
